@@ -307,3 +307,13 @@ button{
 .manual-btn:hover{
   background-color: var(--color-principal1);
 }
+
+#radio1:checked ~.navbtn .auto-btn1{
+   background-color: var(--color-principal1);
+}
+#radio2:checked ~.navbtn .auto-btn2{
+  background-color: var(--color-principal1);
+}
+#radio3:checked ~.navbtn .auto-btn3{
+  background-color: var(--color-principal1);
+}
