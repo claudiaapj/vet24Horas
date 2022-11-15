@@ -30,30 +30,34 @@
     <main id="principal">
         <hr>
         <section id="banner-container">
-            <div class="banner active">
-                <h2>Consultas e Vacinas</h2>
-                <p>
-                Acompanhamento veterinário para quem mais nos ama!!!
-                </p>
-            </div>
-            <div class="banner">
-                <h2>PetShop</h2>
-                <p>
-                O cuidado que eles merecem você encontra aqui!!!
-                </p>
-            </div>
-            <div class="banner">
-            
-                <h2>Pronto Atendimento</h2>
-                <p>
-                Para aqueles momentos dificeis, nossa equipe conta com profissionais compententes e carinhosos!!!
-                </p>
-            </div>
-                <div class="dots">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+            <div class="slides-conj">
+                
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="banner first">
+                    <img src="./assets/img/dog.jpg" alt="">
+                    
                 </div>
+                <div class="banner">
+                  <img src="./assets/img/gatoFilhote.jpg" alt="">
+                </div>
+                <div class="banner">
+                    <img src="./assets/img/catDog.jpg
+                    " alt="">
+                </div>
+                    <div class="navbtn">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+            </div>
+            <div class="manual-navbtn">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
         </section>
         <section id="servicos-container">
             <div  class="servicos">
@@ -112,9 +116,9 @@
                 <h3>Fale Conosco</h3>
                 <p>Dúvidas ou sugetões? Utilize o formulário abaixo:</p>
                 <div class="form-cont">
-                <input type="text" name="" id="" placeholder="Nome">
-                <input type="email" name="" id="" placeholder="E-mail">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                <input type="text" name="" id="nome" placeholder="Nome" required>
+                <input type="email" name="" id="email" placeholder="E-mail" required>
+                <textarea name="" id="mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>
                 <button type="submit">Enviar</button>
             </div>
             </form>
