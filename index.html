@@ -112,19 +112,28 @@
 
         </div>
            <div class="form">
-            <form action="">
+            <form name="form" method="post" onsubmit="return validaForm(this);">
                 <h3>Fale Conosco</h3>
                 <p>Dúvidas ou sugetões? Utilize o formulário abaixo:</p>
+                <div class="none" id="erro">
+
+                </div>
                 <div class="form-cont">
-                <input type="text" name="" id="nome" placeholder="Nome" required>
-                <input type="email" name="" id="email" placeholder="E-mail" required>
-                <textarea name="" id="mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                <input type="text" name="texto" id="nome" placeholder="Nome" >
+                <input type="email" name="texto" id="email" placeholder="E-mail" >
+                <textarea name="texto"id="mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>
                 <button type="submit">Enviar</button>
             </div>
             </form>
 
              </div>
     </footer>
+
+    <?php
+    if (isset($_POST["acao"])){
+    echo "<script>alert('Formulário Foi enviado pelo método POST')</script>";
+    }
+?>
     
 </body>
 </html>
